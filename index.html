@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img class="clouds-back" src="https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsBack.png" alt="" width="1536" height="326">
-<img class="clouds-middle" src="https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsMiddle.png" alt="" width="1536" height="233">
-<img class="clouds-front" src="https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsFront.png" alt="" width="1536" height="138">
 <img class="light" src="https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/Light.png" alt="" width="2560" height="2560">
+<div class="clouds-back"></div>
+<div class="clouds-middle"></div>
+<div class="clouds-front"></div>
 <style>
 body {
 overflow: hidden;
@@ -26,21 +26,27 @@ overflow: hidden;
 .clouds-back {
     position: absolute;
     top: 754px;
-    background-repeat: repeat-x;
+    width: 1536px;
+    height: 326px;
+    background: transparent repeat-x url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsMiddle.png");
     z-index: 1;
 }
     
 .clouds-middle {
     position: absolute;
     top: 847px;
-    background-repeat: repeat-x;
+    width: 1536px;
+    height: 233px;
+    background: transparent repeat-x url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsMiddle.png");
     z-index: 2;
 }
     
 .clouds-front {
     position: absolute;
     top: 942px;
-    background-repeat: repeat-x;
+    width: 1536px;
+    height: 138px;
+    background: transparent repeat-x url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsFront.png");
     z-index: 3;
 }
     
