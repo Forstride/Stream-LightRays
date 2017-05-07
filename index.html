@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <img class="light" src="https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/Light.png" alt="" width="2560" height="2560">
 <div class="clouds-back"></div>
 <div class="clouds-middle"></div>
 <div class="clouds-front"></div>
+
 <style>
 body {
 overflow: hidden;
@@ -29,8 +31,9 @@ overflow: hidden;
     width: 1536px;
     height: 326px;
     background-image: url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsBack.png");
-    background-repeat: repeat-x;
     z-index: 1;
+    -webkit-animation: bgScroll 30s linear infinite;
+    animation: bgScroll 30s linear infinite;
 }
     
 .clouds-middle {
@@ -39,8 +42,9 @@ overflow: hidden;
     width: 1536px;
     height: 233px;
     background-image: url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsMiddle.png");
-    background-repeat: repeat-x;
     z-index: 2;
+    -webkit-animation: bgScroll 30s linear infinite;
+    animation: bgScroll 30s linear infinite;
 }
     
 .clouds-front {
@@ -49,16 +53,20 @@ overflow: hidden;
     width: 1536px;
     height: 138px;
     background-image: url("https://raw.githubusercontent.com/TDWPFTW/stream/gh-pages/CloudsFront.png");
-    background-repeat: repeat-x;
     z-index: 3;
+    -webkit-animation: bgScroll 30s linear infinite;
+    animation: bgScroll 30s linear infinite;
 }
     
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-.inner-container::-webkit-scrollbar {
-display: none;
-}
+    
+@-webkit-keyframes bgScroll { from { background-position: 0 0px; } to { background-position: -1536px 0px; } }
+@keyframes bgScroll { from {background-position: 0 0px; } to { background-position: -1536px 0px; } }
+    
+.inner-container::-webkit-scrollbar { display: none; }
+
 </style>
 </body>
 </html>
